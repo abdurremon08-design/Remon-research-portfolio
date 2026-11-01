@@ -91,7 +91,7 @@ function App() {
         <nav className={menuOpen ? 'nav-links open' : 'nav-links'}>
           {nav.map(item => <button key={item} onClick={() => { closeProject(); goTo(item.toLowerCase()) }}>{item}</button>)}
         </nav>
-        <a className="top-contact" href="mailto:YOUR.EMAIL@example.com">Get in touch <ArrowUpRight size={15} /></a>
+        <a className="top-contact" href="mailto:abdurremon08@gmail.com">Get in touch <ArrowUpRight size={15} /></a>
       </header>
 
       {activeProject ? (
@@ -248,8 +248,8 @@ function App() {
           </section>
 
           <footer className="footer" id="contact">
-            <div className="footer-top"><div><span className="eyebrow eyebrow-light">LET'S CONNECT</span><h2>Good research<br />starts with a <em>conversation.</em></h2></div><a className="footer-mail" href="mailto:YOUR.EMAIL@example.com">YOUR.EMAIL@example.com <ArrowUpRight /></a></div>
-            <div className="footer-bottom"><span>© 2026 ABDUR RAHMAN REMON</span><span>ACADEMIC & RESEARCH PORTFOLIO</span><div><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><Linkedin size={17} /> LinkedIn</a><a href="mailto:YOUR.EMAIL@example.com"><Mail size={17} /> Email</a></div></div>
+            <div className="footer-top"><div><span className="eyebrow eyebrow-light">LET'S CONNECT</span><h2>Good research<br />starts with a <em>conversation.</em></h2></div><a className="footer-mail" href="mailto:abdurremon08@gmail.com">abdurremon08@gmail.com <ArrowUpRight /></a></div>
+            <div className="footer-bottom"><span>© 2026 ABDUR RAHMAN REMON</span><span>ACADEMIC & RESEARCH PORTFOLIO</span><div><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><Linkedin size={17} /> LinkedIn</a><a href="mailto:abdurremon08@gmail.com"><Mail size={17} /> Email</a></div></div>
           </footer>
         </main>
       )}
