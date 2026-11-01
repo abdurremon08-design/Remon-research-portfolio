@@ -42,44 +42,38 @@ body{background:var(--paper);color:var(--ink)}
 @media(max-width:760px){.topbar{height:66px}.hero{padding:65px 7% 75px;display:flex}.hero h1{font-size:68px}.hero-art{height:430px;min-height:430px;margin-top:25px}.hero-photo-placeholder{height:360px;width:260px;right:50%;transform:translateX(50%)}.hero-index-card{left:0;bottom:0}.note-top{left:-2%;top:30px}.note-bottom{right:-2%;bottom:35px}.art-stamp{right:0;top:8px}.intro-strip{padding:22px 7%}.intro-strip div{font-size:15px}.section{padding:75px 7%}.section-label{margin-bottom:38px}.timeline{margin:0 0 0 10px;padding-left:28px}.timeline-item{display:grid;grid-template-columns:1fr;gap:8px;padding-bottom:35px}.timeline-date{position:static;text-align:left;width:auto;grid-column:auto;grid-row:auto}.timeline-marker{position:absolute;left:-35px;top:1px;margin:0}.timeline-content{grid-column:auto;grid-row:auto}.timeline-content h3{font-size:23px}.project-grid{grid-template-columns:1fr}.project-visual{height:215px}.project-card-body{padding:23px}.lab-left{padding:70px 7% 45px}.lab-right{padding:20px 7% 50px}.skills-grid{grid-template-columns:1fr 1fr}.field-grid{grid-template-columns:1fr}.field-card{min-height:245px}.outputs-section{grid-template-columns:1fr;padding:75px 7%;gap:35px}.outputs-section h2{font-size:48px}.output-item{grid-template-columns:28px 1fr 18px;gap:9px}.output-copy h3{font-size:18px}.cv-section{padding:45px 7% 65px}.footer{padding:70px 7% 25px}}
 @media(max-width:390px){.hero h1{font-size:57px}.hero-art{height:390px;min-height:390px}.hero-photo-placeholder{height:330px;width:235px}.floating-note{padding:10px}.note-top{left:-5%}.note-bottom{right:-5%}.hero-index-card{width:160px}.skills-grid{grid-template-columns:1fr}.output-item{grid-template-columns:24px 1fr}.output-mark{display:none}}
 
-/* Authentic research photography */
-.hero-photo-placeholder.hero-portrait{display:block;isolation:isolate;background:#dfe8d8;box-shadow:22px 24px 0 #d5dfca,0 25px 70px #405f4820}
-.hero-portrait>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;z-index:0}
-.hero-portrait:before{z-index:1;pointer-events:none;background:linear-gradient(180deg,transparent 58%,#142b1e8c 100%)}
-.hero-portrait:after{z-index:1;pointer-events:none}
-.hero-portrait .photo-caption{z-index:2;left:24px;bottom:22px;color:#fff;font-size:8px;letter-spacing:.17em}
-.timeline-photo{float:right;width:min(34%,230px);height:145px;object-fit:cover;margin:2px 0 14px 22px;border:5px solid #fffdf7;box-shadow:0 8px 24px #243c2815}
-.project-visual{isolation:isolate}
-.project-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s;z-index:0}
-.project-card:hover .project-cover{transform:scale(1.045)}
-.project-visual:after{z-index:1;background:linear-gradient(180deg,#142a1d20,transparent 38%,#142a1d55)}
-.project-num,.visual-caption,.project-arrow{z-index:2;color:#fff;text-shadow:0 1px 8px #0008}
-.project-arrow{color:var(--green);text-shadow:none}
-.lab-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:28px}
-.lab-photo-grid img{width:100%;height:120px;object-fit:cover;border:1px solid #ffffff38}
-.field-card{padding:0;display:block;min-height:330px;isolation:isolate;background:#d9e5d0}
-.field-card>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .5s}
-.field-card:hover>img{transform:scale(1.04)}
-.field-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#142b1c05 15%,#142b1cbb 100%);z-index:-1}
-.field-card-copy{position:absolute;left:27px;right:24px;bottom:25px;color:white}
-.field-card-copy>span{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#f0e6cf}
-.field-card-copy h3{color:#fff;margin:8px 0}
-.field-card-copy p{color:#f5f2e9;margin:0;max-width:300px}
-.detail-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.detail-photo-grid button{padding:0;border:0;background:#e7eadf;cursor:zoom-in;overflow:hidden;min-height:150px}
-.detail-photo-grid img{width:100%;height:190px;object-fit:cover;display:block;transition:transform .35s}
-.detail-photo-grid button:hover img{transform:scale(1.04)}
-.lightbox{padding:35px}
-.lightbox img{max-width:min(100%,1100px);max-height:85vh;object-fit:contain;box-shadow:0 20px 70px #0008}
-.lightbox button{position:fixed;top:20px;right:28px;z-index:2}
-.cv-section>div:nth-child(2) p{max-width:550px}
-@media(max-width:760px){
- .timeline-photo{float:none;display:block;width:100%;max-width:360px;height:180px;margin:14px 0}
- .hero-photo-placeholder.hero-portrait{width:260px;right:50%;transform:translateX(50%)}
- .lab-photo-grid img{height:105px}
- .field-card{min-height:280px}
- .detail-photo-grid{grid-template-columns:1fr 1fr}
- .detail-photo-grid img{height:145px}
- .lightbox{padding:18px}
-}
-@media(max-width:390px){.detail-photo-grid{grid-template-columns:1fr}.detail-photo-grid img{height:190px}}
+/* Research experience cards and authentic project photography */
+.research-section .section-intro{margin:-14px 0 34px;max-width:650px}
+.research-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:30px}
+.research-card{min-width:0;background:#fff;border:1px solid #e1e5db;box-shadow:0 7px 22px #3b533b08;display:flex;flex-direction:column;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.research-card:hover{transform:translateY(-5px);box-shadow:0 18px 38px #3b533b16}
+.research-image{height:225px;position:relative;overflow:hidden;background:#dce7d8}
+.research-image img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s}
+.research-card:hover .research-image img{transform:scale(1.045)}
+.research-number{position:absolute;left:15px;top:15px;padding:7px 10px;background:#fbfaf5;color:#294c39;font-size:10px;font-weight:700;letter-spacing:.1em}
+.research-content{padding:23px 22px 25px;display:flex;flex-direction:column;flex:1}
+.research-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:15px}
+.research-category{font-size:8px;letter-spacing:.15em;font-weight:800;color:#4c8061}
+.research-date{font-size:8px;letter-spacing:.08em;color:#899386;white-space:nowrap}
+.research-content h3{font:500 23px/1.25 var(--serif);color:#294c39;margin:0 0 11px}
+.research-institution{font-size:10px;line-height:1.7;color:#9a815f;margin:0 0 13px}
+.research-description{font-size:11px;line-height:1.85;color:#6d7b70;margin:0 0 17px}
+.research-content .inline-link{margin-top:auto;padding:8px 0 0;align-self:flex-start}
+.project-cover{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.project-visual:after{pointer-events:none}
+.project-num,.visual-caption,.project-arrow{z-index:3}
+.project-num{background:#fbfaf5d9;padding:7px 9px}
+.visual-caption{background:#fbfaf5d9;padding:6px 8px}
+.lab-photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}
+.lab-photo-grid img{width:100%;height:155px;object-fit:cover;display:block;border:1px solid #ffffff35}
+.detail-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.detail-photo-grid img{width:100%;height:230px;object-fit:cover;display:block;cursor:zoom-in;background:#e8eee3}
+.hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:0}
+.hero-photo-placeholder:before{z-index:1;pointer-events:none}
+.hero-photo-placeholder:after{z-index:1;pointer-events:none}
+.hero-photo-placeholder .photo-orbit,.hero-photo-placeholder .photo-instruction,.hero-photo-placeholder .photo-caption,.hero-photo-placeholder .portrait-icon{z-index:2}
+.hero-photo-placeholder .portrait-icon,.hero-photo-placeholder .photo-instruction{display:none}
+.lightbox{padding:30px}
+.lightbox img{max-width:min(90vw,1100px);max-height:85vh;object-fit:contain}
+@media(max-width:950px){.research-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.research-grid{grid-template-columns:1fr;gap:18px}.research-image{height:230px}.research-content{padding:22px 20px 24px}.lab-photo-grid img{height:130px}.detail-photo-grid{grid-template-columns:1fr}.detail-photo-grid img{height:auto;max-height:360px}.hero-portrait{object-position:center 25%}}
