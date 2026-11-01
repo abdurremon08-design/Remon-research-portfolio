@@ -100,12 +100,13 @@ function App() {
               <div className="hero-photo-placeholder">
                 <div className="photo-orbit orbit-one" /><div className="photo-orbit orbit-two" />
                 <div className="portrait-icon"><Sprout size={62} strokeWidth={1} /></div>
-                <span className="photo-instruction">YOUR PORTRAIT<br />GOES HERE</span>
-                <span className="photo-caption">FIELD NOTES · BANGLADESH</span>
+                <span className="photo-instruction">PLANTS · PATHOGENS<br />& ECOSYSTEMS</span>
+                <span className="photo-caption">RESEARCH NOTES · BANGLADESH</span>
               </div>
               <div className="floating-note note-top"><span className="note-icon"><Microscope size={17} /></span><span>Field & laboratory<br /><b>research experience</b></span></div>
               <div className="floating-note note-bottom"><span className="note-number">87</span><span>Weed species<br /><b>documented</b></span></div>
-              <div className="art-stamp">PLANT<br />SCIENCE<br /><span>✳</span></div>
+              <div className="art-stamp">FIELD<br />TO LAB<br /><span>✳</span></div>
+            <div className="hero-index-card"><span>RESEARCH PROFILE</span><strong>03</strong><small>CORE AREAS<br />OF EXPERIENCE</small><i>AGRONOMY / PATHOLOGY / ECOLOGY</i></div>
             </div>
             <div className="hero-bottom"><span>SCROLL TO EXPLORE</span><span className="hero-bottom-line" /><span>01 — 08</span></div>
           </section>
@@ -193,8 +194,29 @@ function App() {
           </section>
 
           <section className="outputs-section" id="outputs">
-            <div><span className="eyebrow eyebrow-light">07 / RESEARCH OUTPUTS</span><h2>Research is a<br /><em>work in progress.</em></h2><p>Manuscript information will be added here with accurate titles, author contributions, journal details and publication status.</p></div>
-            <div className="output-list"><div><span>01</span><strong>Published</strong><small>Add published work, if applicable.</small></div><div><span>02</span><strong>Submitted / Under review</strong><small>Add verified manuscript details and status.</small></div><div><span>03</span><strong>In preparation</strong><small>Add manuscripts that are being prepared.</small></div></div>
+            <div className="outputs-intro">
+              <span className="eyebrow eyebrow-light">07 / RESEARCH OUTPUTS</span>
+              <h2>From field notes<br />to <em>research papers.</em></h2>
+              <p>Research outputs are presented according to their current stage. Publication status is stated conservatively and will be updated as each manuscript progresses.</p>
+              <div className="outputs-footnote"><span className="status-pulse" /> STATUS CHECKED · NOVEMBER 2026</div>
+            </div>
+            <div className="output-list">
+              <article className="output-item output-ready">
+                <div className="output-index">01</div>
+                <div className="output-copy"><span className="output-status">READY FOR JOURNAL SUBMISSION</span><h3>Weed flora diversity and ethnobotanical significance on the SAU campus</h3><p>The study documenting 87 weed species is prepared for journal submission. It has not yet been submitted.</p></div>
+                <div className="output-mark">↗</div>
+              </article>
+              <article className="output-item output-analysis">
+                <div className="output-index">02</div>
+                <div className="output-copy"><span className="output-status">DATA ANALYSIS</span><h3>Combined salinity and waterlogging tolerance in wheat varieties</h3><p>Experimental activities and data collection have been supported; the study is currently at the data-analysis stage.</p></div>
+                <div className="output-mark">⌁</div>
+              </article>
+              <article className="output-item output-prep">
+                <div className="output-index">03</div>
+                <div className="output-copy"><span className="output-status">IN PREPARATION</span><h3>Other research manuscripts</h3><p>Manuscripts arising from the other research projects are currently under preparation. Titles, author contributions and journal information will be added when verified.</p></div>
+                <div className="output-mark">✳</div>
+              </article>
+            </div>
           </section>
 
           <section className="section cv-section" id="cv">
