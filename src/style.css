@@ -68,9 +68,25 @@ body{background:var(--paper);color:var(--ink)}
 .lab-photo-grid img{width:100%;height:155px;object-fit:cover;display:block;border:1px solid #ffffff35}
 .detail-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
 .detail-photo-grid img{width:100%;height:230px;object-fit:cover;display:block;cursor:zoom-in;background:#e8eee3}
-.hero-portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;z-index:0}
-.hero-photo-placeholder:before{z-index:1;pointer-events:none}
-.hero-photo-placeholder:after{z-index:1;pointer-events:none}
+/* Clearer homepage portrait: remove decorative overlays that obscure the photograph. */
+.hero-photo-placeholder:before,
+.hero-photo-placeholder:after {
+  content: none !important;
+  display: none !important;
+}
+.hero-portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 24%;
+  z-index: 0;
+  filter: brightness(1.07) contrast(1.06) saturate(1.04);
+}
+.hero-photo-placeholder {
+  background: #e7eadf;
+}
 .hero-photo-placeholder .photo-orbit,.hero-photo-placeholder .photo-instruction,.hero-photo-placeholder .photo-caption,.hero-photo-placeholder .portrait-icon{z-index:2}
 .hero-photo-placeholder .portrait-icon,.hero-photo-placeholder .photo-instruction{display:none}
 .lightbox{padding:30px}
