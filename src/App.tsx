@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {
   ArrowDownRight, ArrowRight, ArrowUpRight, Menu, X, Leaf, Microscope,
   Sprout, BookOpen, FlaskConical, MapPin, Mail, Linkedin, Download,
-  Flower2, Globe2, Waves, Trees, Presentation
+  Flower2, Globe2, Waves, Trees
 } from 'lucide-react'
 
 type Project = {
@@ -109,6 +109,83 @@ const projects: Project[] = [
       '/images/PICTURE OF WEED WHILE SURVEYING WEED FOR WEED DOCUMENTATION.jpg',
       '/images/mutha WEED PICTURE OF WEED WHILE SURVEYING WEED FOR WEED DOCUMENTATION.jpg'
     ]
+  }
+]
+
+/* ACADEMIC PRESENTATION DATA */
+
+const presentationCards = [
+  {
+    number: '01',
+    category: 'SOIL SCIENCE',
+    title: 'The Role of Organic Amendments in Soil Nutrient Management',
+    context: 'Department of Soil Science · Level 3, Semester 2',
+    description: 'Explored the contribution of organic amendments to soil fertility, nutrient availability and sustainable soil management, with emphasis on improving soil health and maintaining agricultural productivity.',
+    image: '/images/organic-soil-amendments.jpeg',
+    alt: 'Organic amendments and soil nutrient management'
+  },
+  {
+    number: '02',
+    category: 'ENTOMOLOGY',
+    title: 'Crop Disease Transmission by Insects',
+    context: 'ENTO 460 · Pest Management and Economic Entomology',
+    description: 'Examined the role of insect vectors in transmitting plant pathogens, focusing on insect–plant interactions, disease transmission mechanisms and their implications for crop protection.',
+    image: '/images/insect-disease-transmission.jpeg',
+    alt: 'Insect vectors and crop disease transmission'
+  },
+  {
+    number: '03',
+    category: 'PLANT PROTECTION',
+    title: 'Commonly Used Fungicides in Bangladesh',
+    context: 'B.Sc. Agriculture · Sher-e-Bangla Agricultural University',
+    description: 'Reviewed commonly used fungicides in Bangladesh, their applications in managing fungal crop diseases and their importance in agricultural plant protection.',
+    image: '/images/fungicide-application.jpeg',
+    alt: 'Fungicide application in agricultural crops'
+  },
+  {
+    number: '04',
+    category: 'AGRONOMY',
+    title: 'Effect of Nano Nitrogen with Urea on Growth of Mustard',
+    context: 'Term Paper · 4th Year, 1st Semester',
+    description: 'Presented the potential effects of nano nitrogen combined with conventional urea on mustard growth, highlighting nutrient management and crop performance.',
+    image: '/images/nano-nitrogen-mustard.jpeg',
+    alt: 'Mustard crop and nano nitrogen research'
+  },
+  {
+    number: '05',
+    category: 'BOTANY',
+    title: 'Marsilea quadrifolia: Botanical Characteristics and Significance',
+    context: 'Undergraduate Academic Presentation',
+    description: 'Explored the botanical characteristics, habitat, morphology and ecological significance of Marsilea quadrifolia, an aquatic fern species.',
+    image: '/images/Marsilea quadrifolia.jpeg',
+    alt: 'Marsilea quadrifolia aquatic fern'
+  },
+  {
+    number: '06',
+    category: 'SEED SCIENCE',
+    title: 'Seed Health Testing of Rice Varieties',
+    context: 'Undergraduate Academic Presentation',
+    description: 'Introduced seed health testing approaches for rice varieties, emphasizing seed-borne pathogens, seed quality assessment and the importance of healthy planting materials.',
+    image: '/images/rice-seed-health-testing.jpeg',
+    alt: 'Rice seed health testing'
+  },
+  {
+    number: '07',
+    category: 'AQUACULTURE',
+    title: 'Sources, Transportation and Stocking of Live Fish',
+    context: 'First-Year Aquaculture Elective Course',
+    description: 'Discussed the sources of live fish, transportation requirements and appropriate stocking practices in aquaculture, with emphasis on fish handling and survival.',
+    image: '/images/live-fish-transportation.jpeg',
+    alt: 'Live fish transportation and aquaculture'
+  },
+  {
+    number: '08',
+    category: 'FORESTRY & SILVICULTURE',
+    title: 'Silvical Features of Eucalyptus Trees',
+    context: 'Undergraduate Academic Presentation',
+    description: 'Explored the botanical and ecological characteristics of Eucalyptus trees, including their growth habits, environmental requirements and important silvicultural features.',
+    image: '/images/eucalyptus-silviculture.jpeg',
+    alt: 'Eucalyptus trees and silvicultural characteristics'
   }
 ]
 
@@ -671,8 +748,8 @@ function App() {
               <div className="lab-photo-grid">
 
                 <img
-                  src="/images/a good picture of me working in advanced molecular lab.jpeg"
-                  alt="Working in the advanced molecular laboratory"
+                  src="/images/ME USING CENTRIFUGING MECHINE IN LAB.jpeg"
+                  alt="Working with a centrifuge in the laboratory"
                   loading="lazy"
                 />
 
@@ -793,60 +870,67 @@ function App() {
               tag="PRESENTATION ARCHIVE"
             />
 
-            <div className="presentation-feature">
+            <div className="presentation-intro-row">
 
-              <div className="presentation-icon">
-                <Presentation size={42} strokeWidth={1}/>
-              </div>
+              <p className="section-intro">
+                A selection of academic presentations delivered during
+                my undergraduate studies, covering diverse areas of
+                agricultural and environmental sciences.
+              </p>
 
-              <div>
+              <span className="presentation-count">
+                08 PRESENTATIONS
+              </span>
 
-                <span className="eyebrow">
-                  ARCHIVE IN PROGRESS
-                </span>
+            </div>
 
-                <h3>Academic Presentation Archive</h3>
+            <div className="presentation-recognition">
+              <span>✳</span>
+              Recognized as Best Presenter in most of these undergraduate presentations.
+            </div>
 
-                <p>
-                  I am currently organizing and updating this section
-                  with selected academic presentations delivered during
-                  my undergraduate studies. Presentation slides and
-                  supporting materials will be added soon.
-                </p>
+            <div className="presentation-grid">
 
-                <span className="coming-soon">
-                  COMING SOON <span>↗</span>
-                </span>
+              {presentationCards.map(item => (
 
-              </div>
+                <article
+                  className="presentation-card"
+                  key={item.number}
+                >
 
-              <div className="presentation-side">
+                  <div className="presentation-image">
 
-                <div className="presentation-mini">
-                  <span>01</span>
-                  <div>
-                    <strong>Topic thumbnails</strong>
-                    <small>Will be added with verified titles</small>
+                    <img
+                      src={item.image}
+                      alt={item.alt}
+                      loading="lazy"
+                    />
+
+                    <span className="presentation-number">
+                      {item.number}
+                    </span>
+
                   </div>
-                </div>
 
-                <div className="presentation-mini">
-                  <span>02</span>
-                  <div>
-                    <strong>Slide previews</strong>
-                    <small>Selected materials, where appropriate</small>
+                  <div className="presentation-card-body">
+
+                    <span className="presentation-category">
+                      {item.category}
+                    </span>
+
+                    <h3>{item.title}</h3>
+
+                    <span className="presentation-context">
+                      {item.context}
+                    </span>
+
+                    <p>{item.description}</p>
+
                   </div>
-                </div>
 
-                <div className="presentation-mini">
-                  <span>03</span>
-                  <div>
-                    <strong>Academic context</strong>
-                    <small>Course / event details to follow</small>
-                  </div>
-                </div>
+                </article>
 
-              </div>
+              ))}
 
             </div>
 
