@@ -216,3 +216,35 @@ body{background:var(--paper);color:var(--ink)}
     height: 190px;
   }
 }
+/* ===== Force presentation images to compact thumbnail size ===== */
+
+.presentations-section img {
+  display: block !important;
+  width: 100% !important;
+  height: 150px !important;
+  max-height: 150px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  margin: 0 auto;
+}
+
+.presentations-section .presentation-image-wrap {
+  height: 150px !important;
+  max-height: 150px !important;
+  overflow: hidden !important;
+  background: #edf0ef;
+}
+
+.presentations-section .presentation-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 22px !important;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+@media (max-width: 520px) {
+  .presentations-section .presentation-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
