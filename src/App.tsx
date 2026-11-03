@@ -106,86 +106,8 @@ const projects: Project[] = [
     imageLabel: 'Photographs of weed species and field observations from the campus survey',
     photos: [
       '/images/Coix_lacrym FROM WEED SURVEY.jpg',
-      '/images/PICTURE OF WEED WHILE SURVEYING WEED FOR WEED DOCUMENTATION.jpg',
       '/images/mutha WEED PICTURE OF WEED WHILE SURVEYING WEED FOR WEED DOCUMENTATION.jpg'
     ]
-  }
-]
-
-/* ACADEMIC PRESENTATION DATA */
-
-const presentationCards = [
-  {
-    number: '01',
-    category: 'SOIL SCIENCE',
-    title: 'The Role of Organic Amendments in Soil Nutrient Management',
-    context: 'Department of Soil Science · Level 3, Semester 2',
-    description: 'Explored the contribution of organic amendments to soil fertility, nutrient availability and sustainable soil management, with emphasis on improving soil health and maintaining agricultural productivity.',
-    image: '/images/organic-soil-amendments.jpeg',
-    alt: 'Organic amendments and soil nutrient management'
-  },
-  {
-    number: '02',
-    category: 'ENTOMOLOGY',
-    title: 'Crop Disease Transmission by Insects',
-    context: 'ENTO 460 · Pest Management and Economic Entomology',
-    description: 'Examined the role of insect vectors in transmitting plant pathogens, focusing on insect–plant interactions, disease transmission mechanisms and their implications for crop protection.',
-    image: '/images/insect-disease-transmission.jpeg',
-    alt: 'Insect vectors and crop disease transmission'
-  },
-  {
-    number: '03',
-    category: 'PLANT PROTECTION',
-    title: 'Commonly Used Fungicides in Bangladesh',
-    context: 'B.Sc. Agriculture · Sher-e-Bangla Agricultural University',
-    description: 'Reviewed commonly used fungicides in Bangladesh, their applications in managing fungal crop diseases and their importance in agricultural plant protection.',
-    image: '/images/fungicide-application.jpeg',
-    alt: 'Fungicide application in agricultural crops'
-  },
-  {
-    number: '04',
-    category: 'AGRONOMY',
-    title: 'Effect of Nano Nitrogen with Urea on Growth of Mustard',
-    context: 'Term Paper · 4th Year, 1st Semester',
-    description: 'Presented the potential effects of nano nitrogen combined with conventional urea on mustard growth, highlighting nutrient management and crop performance.',
-    image: '/images/nano-nitrogen-mustard.jpeg',
-    alt: 'Mustard crop and nano nitrogen research'
-  },
-  {
-    number: '05',
-    category: 'BOTANY',
-    title: 'Marsilea quadrifolia: Botanical Characteristics and Significance',
-    context: 'Undergraduate Academic Presentation',
-    description: 'Explored the botanical characteristics, habitat, morphology and ecological significance of Marsilea quadrifolia, an aquatic fern species.',
-    image: '/images/Marsilea quadrifolia.jpeg',
-    alt: 'Marsilea quadrifolia aquatic fern'
-  },
-  {
-    number: '06',
-    category: 'SEED SCIENCE',
-    title: 'Seed Health Testing of Rice Varieties',
-    context: 'Undergraduate Academic Presentation',
-    description: 'Introduced seed health testing approaches for rice varieties, emphasizing seed-borne pathogens, seed quality assessment and the importance of healthy planting materials.',
-    image: '/images/rice-seed-health-testing.jpeg',
-    alt: 'Rice seed health testing'
-  },
-  {
-    number: '07',
-    category: 'AQUACULTURE',
-    title: 'Sources, Transportation and Stocking of Live Fish',
-    context: 'First-Year Aquaculture Elective Course',
-    description: 'Discussed the sources of live fish, transportation requirements and appropriate stocking practices in aquaculture, with emphasis on fish handling and survival.',
-    image: '/images/live-fish-transportation.jpeg',
-    alt: 'Live fish transportation and aquaculture'
-  },
-  {
-    number: '08',
-    category: 'FORESTRY & SILVICULTURE',
-    title: 'Silvical Features of Eucalyptus Trees',
-    context: 'Undergraduate Academic Presentation',
-    description: 'Explored the botanical and ecological characteristics of Eucalyptus trees, including their growth habits, environmental requirements and important silvicultural features.',
-    image: '/images/eucalyptus-silviculture.jpeg',
-    alt: 'Eucalyptus trees and silvicultural characteristics'
   }
 ]
 
@@ -222,6 +144,57 @@ const fieldTrips = [
       '/images/VISITED HILLY COTTON RESEARCH AREA ON BANDRBON FIELD TRIP.jpg',
       '/images/WAY OF PEOPLE WORKING AND DIVERSITY ON BANDARBAN.jpg'
     ]
+  }
+]
+
+const presentations = [
+  {
+    title: 'The Role of Organic Amendments in Soil Nutrient Management',
+    image: '/images/organic-soil-amendments.jpeg',
+    category: 'Soil Science',
+    description: 'Explored how organic amendments contribute to soil fertility, nutrient availability and sustainable soil management, with emphasis on soil health and long-term productivity.'
+  },
+  {
+    title: 'Crop Disease Transmission by Insects',
+    image: '/images/insect-disease-transmission.jpeg',
+    category: 'Pest Management and Economic Entomology · ENTO 460',
+    description: 'Examined the role of insect vectors in transmitting plant pathogens, including insect–plant interactions, disease transmission mechanisms and implications for crop protection.'
+  },
+  {
+    title: 'Commonly Used Fungicides in Bangladesh',
+    image: '/images/fungicide-application.jpeg',
+    category: 'Plant Pathology',
+    description: 'Reviewed commonly used fungicides in Bangladesh, their applications in managing fungal crop diseases and their importance in agricultural plant protection.'
+  },
+  {
+    title: 'Effect of Nano Nitrogen with Urea on Growth of Mustard',
+    image: '/images/nano-nitrogen-mustard.jpeg',
+    category: 'Agronomy · Term Paper · 4th Year, 1st Semester',
+    description: 'Presented the potential effects of nano nitrogen combined with conventional urea on mustard growth, nutrient management and crop performance.'
+  },
+  {
+    title: 'Marsilea quadrifolia: Botanical Characteristics and Significance',
+    image: '/images/Marsilea quadrifolia.jpeg',
+    category: 'Botany',
+    description: 'Explored the botanical characteristics, habitat, morphology and ecological significance of this aquatic fern species.'
+  },
+  {
+    title: 'Seed Health Testing of Rice Varieties',
+    image: '/images/rice-seed-health-testing.jpeg',
+    category: 'Seed Science',
+    description: 'Introduced seed health testing approaches, seed-borne pathogens, seed quality assessment and the importance of healthy planting materials.'
+  },
+  {
+    title: 'Sources, Transportation and Stocking of Live Fish',
+    image: '/images/live-fish-transportation.jpeg',
+    category: 'Aquaculture · Elective Course',
+    description: 'Discussed sources of live fish, transportation requirements and stocking practices, with emphasis on fish handling and survival.'
+  },
+  {
+    title: 'Silvical Features of Eucalyptus Trees',
+    image: '/images/eucalyptus-silviculture.jpeg',
+    category: 'Agroforestry',
+    description: 'Explored the botanical and ecological characteristics of Eucalyptus trees, including their growth habits, environmental requirements and silvicultural features.'
   }
 ]
 
@@ -749,7 +722,7 @@ function App() {
 
                 <img
                   src="/images/ME USING CENTRIFUGING MECHINE IN LAB.jpeg"
-                  alt="Working with a centrifuge in the laboratory"
+                  alt="Working in the advanced molecular laboratory"
                   loading="lazy"
                 />
 
@@ -859,10 +832,7 @@ function App() {
 
           {/* ACADEMIC PRESENTATIONS */}
 
-          <section
-            className="section presentations-section"
-            id="presentations"
-          >
+          <section className="section presentations-section" id="presentations">
 
             <SectionLabel
               number="07"
@@ -870,68 +840,47 @@ function App() {
               tag="PRESENTATION ARCHIVE"
             />
 
-            <div className="presentation-intro-row">
-
-              <p className="section-intro">
-                A selection of academic presentations delivered during
-                my undergraduate studies, covering diverse areas of
-                agricultural and environmental sciences.
+            <div className="presentation-intro">
+              <p>
+                Selected undergraduate presentations covering agronomy,
+                plant pathology, entomology, botany, seed science,
+                aquaculture and related agricultural disciplines.
               </p>
-
               <span className="presentation-count">
-                08 PRESENTATIONS
+                {String(presentations.length).padStart(2, '0')} PRESENTATIONS
               </span>
-
             </div>
 
-            <div className="presentation-recognition">
-              <span>✳</span>
-              Recognized as Best Presenter in most of these undergraduate presentations.
-            </div>
-
-            <div className="presentation-grid">
-
-              {presentationCards.map(item => (
-
-                <article
-                  className="presentation-card"
-                  key={item.number}
-                >
-
-                  <div className="presentation-image">
-
+            <div className="presentation-list">
+              {presentations.map((item, index) => (
+                <article className="presentation-row" key={item.title}>
+                  <div className="presentation-thumbnail">
                     <img
                       src={item.image}
-                      alt={item.alt}
+                      alt={`Presentation thumbnail: ${item.title}`}
                       loading="lazy"
                     />
-
-                    <span className="presentation-number">
-                      {item.number}
+                    <span className="thumbnail-number">
+                      {String(index + 1).padStart(2, '0')}
                     </span>
-
                   </div>
 
-                  <div className="presentation-card-body">
-
-                    <span className="presentation-category">
-                      {item.category}
-                    </span>
-
+                  <div className="presentation-info">
+                    <span className="presentation-category">{item.category}</span>
                     <h3>{item.title}</h3>
-
-                    <span className="presentation-context">
-                      {item.context}
-                    </span>
-
                     <p>{item.description}</p>
-
+                    <div className="presentation-meta">
+                      <span>UNDERGRADUATE ACADEMIC PRESENTATION</span>
+                    </div>
                   </div>
-
                 </article>
-
               ))}
+            </div>
 
+            <div className="presentation-footer">
+              <span className="presentation-footer-line"></span>
+              <p>ACADEMIC COMMUNICATION · KNOWLEDGE SHARING · CONTINUOUS LEARNING</p>
+              <span className="presentation-footer-line"></span>
             </div>
 
           </section>
@@ -1437,3 +1386,4 @@ function ProjectDetail({
 }
 
 export default App
+
