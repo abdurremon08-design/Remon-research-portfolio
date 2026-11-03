@@ -131,13 +131,57 @@ function App() {
           <div className="hero-actions"><button className="button button-dark" onClick={() => goTo('projects')}>Explore my research <ArrowUpRight size={16}/></button><button className="text-link" onClick={() => goTo('about')}>More about me <ArrowDownRight size={16}/></button></div>
           <div className="hero-meta"><span><MapPin size={14}/> Dhaka, Bangladesh</span><span><span className="status-dot"/> Open to research opportunities</span></div>
         </div>
-        <div className="hero-art">
-          <div className="hero-photo-placeholder">
-            <img className="hero-portrait" src="/images/Formal Picture Of me.jpeg" alt="Portrait of Abdur Rahman Remon"/>
-            <div className="photo-orbit orbit-one"/><div className="photo-orbit orbit-two"/>
-            <div className="portrait-icon"><Sprout size={62} strokeWidth={1}/></div>
-            <span className="photo-instruction">PLANTS · PATHOGENS<br/>& ECOSYSTEMS</span><span className="photo-caption">RESEARCH NOTES · BANGLADESH</span>
-          </div>
+        <div className="hero-art digital-hero-art">
+  <div className="digital-frame">
+
+    <div className="digital-frame-top">
+      <span className="digital-live">
+        <i></i> RESEARCHER PROFILE
+      </span>
+      <span className="digital-code">AR.R / 2026–27</span>
+    </div>
+
+    <div className="digital-photo">
+      <img
+        className="hero-portrait"
+        src="/images/Formal Picture Of me.jpeg"
+        alt="Abdur Rahman Remon — Academic and Researcher"
+      />
+
+      <div className="photo-overlay"></div>
+
+      <div className="photo-coordinate">
+        23°48' N / 90°22' E
+      </div>
+
+      <div className="photo-label">
+        <span>01 / PROFILE IMAGE</span>
+        <strong>AB. RAHMAN REMON</strong>
+        <small>AGRICULTURAL SCIENCES</small>
+      </div>
+    </div>
+
+    <div className="digital-frame-bottom">
+      <div>
+        <span className="digital-bottom-label">RESEARCH DOMAINS</span>
+        <strong>AGRONOMY / PATHOLOGY / ECOLOGY</strong>
+      </div>
+      <div className="digital-signal">
+        <i></i><i></i><i></i><i></i><i></i>
+      </div>
+    </div>
+
+    <span className="digital-corner corner-tl"></span>
+    <span className="digital-corner corner-tr"></span>
+    <span className="digital-corner corner-bl"></span>
+    <span className="digital-corner corner-br"></span>
+
+  </div>
+
+  <div className="digital-side-label">
+    ACADEMIC PORTFOLIO — BANGLADESH
+  </div>
+</div>
           <div className="floating-note note-top"><span className="note-icon"><Microscope size={17}/></span><span>Field & laboratory<br/><b>research experience</b></span></div>
           {/* Removed the floating weed-count badge as requested. */}
           <div className="art-stamp">FIELD<br/>TO LAB<br/><span>✳</span></div>
