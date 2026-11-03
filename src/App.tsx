@@ -282,7 +282,7 @@ function App() {
                   </span>
 
                   <span className="digital-code">
-                    AR.R / 2026–27
+                    AR / 2026–27
                   </span>
                 </div>
 
@@ -302,7 +302,7 @@ function App() {
 
                   <div className="photo-label">
                     <span>01 / PROFILE IMAGE</span>
-                    <strong>AB. RAHMAN REMON</strong>
+                    <strong>ABDUR RAHMAN REMON</strong>
                     <small>AGRICULTURAL SCIENCES</small>
                   </div>
 
