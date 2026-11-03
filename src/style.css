@@ -133,97 +133,37 @@ body{background:var(--paper);color:var(--ink)}
     padding: 10px 12px;
   }
 }
-/* =========================================================
-   PRESENTATION ARCHIVE — TWO-COLUMN IMAGE BLOCKS
-   ========================================================= */
+/* ===== Compact YouTube-style Presentation Cards ===== */
 
-.presentations-section {
-  background: #fbf8f0;
-}
-
-/* Introduction */
-.presentations-section .section-intro {
-  max-width: 680px;
-  margin: -15px 0 30px;
-  font-size: 13px;
-  line-height: 1.9;
-  color: #718075;
-}
-
-/* Recognition banner */
-.presentation-recognition-banner {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 18px 22px;
-  margin-bottom: 35px;
-  background: #254d3b;
-  color: #fffaf0;
-}
-
-.presentation-recognition-banner > span {
-  width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: #e2bd79;
-  color: #294c39;
-  font-size: 19px;
-}
-
-.presentation-recognition-banner div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.presentation-recognition-banner strong {
-  font-size: 9px;
-  letter-spacing: .15em;
-  color: #e8cf9e;
-}
-
-.presentation-recognition-banner p {
-  margin: 0;
-  font: italic 16px/1.5 var(--serif);
-  color: #fffaf0;
-}
-
-/* Two presentation blocks per row */
 .presentation-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
-  align-items: start;
-  margin-top: 30px;
+  gap: 24px;
+  max-width: 1050px;
+  margin: 0 auto;
 }
 
-/* Individual presentation block */
 .presentation-card {
-  display: flex;
-  flex-direction: column;
   min-width: 0;
-  background: #fffefa;
-  border: 1px solid #e1e5da;
   overflow: hidden;
-  transition: box-shadow .25s ease, transform .25s ease;
+  border: 1px solid rgba(20, 40, 50, 0.12);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .presentation-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 14px 30px #304b3515;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* Image: preserve the complete picture */
+/* Small landscape thumbnail */
 .presentation-image-wrap {
-  position: relative;
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
+  height: 170px;
   overflow: hidden;
-  background: #e9eee5;
+  background: #edf0ef;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,164 +175,44 @@ body{background:var(--paper);color:var(--ink)}
   height: 100%;
   object-fit: contain;
   object-position: center;
-  background: #f1f0e9;
-  transition: transform .3s ease;
 }
 
-.presentation-card:hover .presentation-image-wrap img {
-  transform: scale(1.015);
-}
-
-/* Number label */
-.presentation-number {
-  position: absolute;
-  z-index: 2;
-  top: 13px;
-  left: 13px;
-  min-width: 33px;
-  height: 33px;
-  padding: 0 8px;
-  display: grid;
-  place-items: center;
-  background: #fbf8f0;
-  color: #294c39;
-  border: 1px solid #e1e5da;
-  font: italic 15px var(--serif);
-}
-
-/* Image caption */
-.presentation-image-label {
-  position: absolute;
-  z-index: 2;
-  bottom: 12px;
-  left: 13px;
-  padding: 7px 10px;
-  background: #254d3be8;
-  color: #fffaf0;
-  font-size: 7px;
-  font-weight: 700;
-  letter-spacing: .14em;
-}
-
-/* Description area underneath image */
+/* Text below thumbnail */
 .presentation-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 23px 25px 25px;
-  flex: 1;
-}
-
-.presentation-course {
-  display: inline-block;
-  margin-bottom: 12px;
-  color: #a16f43;
-  font-size: 8px;
-  font-weight: 800;
-  line-height: 1.6;
-  letter-spacing: .13em;
-  text-transform: uppercase;
+  padding: 16px 18px 20px;
 }
 
 .presentation-card-content h3 {
-  margin: 0 0 12px;
-  color: #294c39;
-  font: 500 23px/1.3 var(--serif);
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0 0 8px;
 }
 
 .presentation-card-content p {
+  font-size: 0.88rem;
+  line-height: 1.6;
   margin: 0;
-  color: #748075;
-  font-size: 11px;
-  line-height: 1.9;
-}
-
-/* Optional individual recognition */
-.presentation-recognition {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  margin-top: 17px;
-  padding: 8px 11px;
-  background: #f5edda;
-  border: 1px solid #eadbb9;
-  color: #936c35;
-  font-size: 8px;
-  font-weight: 800;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-/* Optional archive note */
-.presentation-archive-note {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 30px;
-  padding-top: 19px;
-  border-top: 1px solid #dfe4da;
-  color: #849084;
-  font-size: 9px;
-  line-height: 1.7;
 }
 
 /* Tablet */
 @media (max-width: 760px) {
   .presentation-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 14px;
+    gap: 16px;
   }
 
   .presentation-image-wrap {
-    aspect-ratio: 4 / 3;
-  }
-
-  .presentation-card-content {
-    padding: 17px 15px 19px;
-  }
-
-  .presentation-card-content h3 {
-    font-size: 18px;
-  }
-
-  .presentation-card-content p {
-    font-size: 10px;
-    line-height: 1.75;
-  }
-
-  .presentation-course {
-    font-size: 7px;
-  }
-
-  .presentation-recognition-banner {
-    padding: 15px;
-  }
-
-  .presentation-recognition-banner p {
-    font-size: 14px;
+    height: 140px;
   }
 }
 
-/* Very small phones */
-@media (max-width: 480px) {
+/* Mobile */
+@media (max-width: 520px) {
   .presentation-grid {
     grid-template-columns: 1fr;
-    gap: 22px;
+    max-width: 420px;
   }
 
   .presentation-image-wrap {
-    aspect-ratio: 4 / 3;
-  }
-
-  .presentation-card-content {
-    padding: 21px;
-  }
-
-  .presentation-card-content h3 {
-    font-size: 22px;
-  }
-
-  .presentation-card-content p {
-    font-size: 11px;
+    height: 190px;
   }
 }
