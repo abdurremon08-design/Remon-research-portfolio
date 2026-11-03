@@ -103,3 +103,346 @@ body{background:var(--paper);color:var(--ink)}
 .hero-art .note-bottom{display:none!important}
 @media(max-width:900px){.ielts-card{grid-template-columns:1fr;gap:25px}.ielts-foot{grid-column:1;margin-top:0}.presentation-feature{grid-template-columns:70px 1fr}.presentation-side{grid-column:1/-1;border-left:0;border-top:1px solid #cbd8c7;padding:15px 0 0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.presentation-mini{border-bottom:0}.field-photo-card{min-height:0}}
 @media(max-width:760px){.ielts-card{padding:25px 20px;margin-top:45px}.ielts-row{grid-template-columns:65px 1fr 30px;gap:10px}.field-gallery img{height:115px}.presentation-feature{grid-template-columns:1fr;padding:25px}.presentation-icon{width:65px;height:65px}.presentation-feature h3{font-size:25px}.presentation-side{grid-template-columns:1fr}.presentation-mini{border-bottom:1px solid #cbd8c7}.field-photo-card>span{margin-top:75px}}
+/* ==========================================
+   DIGITAL RESEARCHER PROFILE — HERO REDESIGN
+========================================== */
+
+.hero {
+  background:
+    linear-gradient(115deg, #071827 0%, #0b2030 55%, #102d3c 100%) !important;
+  color: #ffffff;
+}
+
+.hero:before {
+  background-image:
+    linear-gradient(#48c9c010 1px, transparent 1px),
+    linear-gradient(90deg, #48c9c010 1px, transparent 1px) !important;
+  background-size: 38px 38px !important;
+  mask-image: linear-gradient(90deg, transparent 5%, #000 100%);
+}
+
+.hero-copy .eyebrow {
+  color: #72c9c2;
+}
+
+.hero-copy .eyebrow-line {
+  background: #35c9bd;
+}
+
+.hero h1 {
+  color: #f3f8fa;
+}
+
+.hero h1 em {
+  color: #55c8bd;
+}
+
+.hero-role {
+  color: #b8d1d8;
+}
+
+.hero-intro {
+  color: #b1c4cc;
+}
+
+.hero-meta {
+  color: #a5bdc7;
+}
+
+.hero-meta .status-dot {
+  background: #46d6b3;
+  box-shadow: 0 0 0 4px #46d6b320;
+}
+
+.hero .button-dark {
+  background: #19a99e;
+  color: #071827;
+}
+
+.hero .button-dark:hover {
+  background: #55d5c8;
+}
+
+.hero .text-link {
+  color: #9bd9d4;
+}
+
+/* Main portrait container */
+
+.digital-hero-art {
+  min-height: 510px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.digital-frame {
+  position: relative;
+  width: min(100%, 410px);
+  padding: 13px;
+  background: #0d2635;
+  border: 1px solid #35c9bd80;
+  box-shadow:
+    0 0 0 7px #35c9bd0b,
+    0 25px 65px #00000055;
+}
+
+/* Frame header */
+
+.digital-frame-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 5px 13px;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: #9bb9c5;
+}
+
+.digital-live {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.digital-live i {
+  width: 7px;
+  height: 7px;
+  background: #42d7b5;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #42d7b5;
+}
+
+.digital-code {
+  color: #55c8bd;
+}
+
+/* Photograph */
+
+.digital-photo {
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+  background: #142f40;
+  border: 1px solid #ffffff20;
+}
+
+.digital-photo .hero-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+  display: block;
+  filter: saturate(.88) contrast(1.04);
+}
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      #07182715 0%,
+      transparent 45%,
+      #071827e8 100%
+    );
+  pointer-events: none;
+}
+
+/* Small technical details */
+
+.photo-coordinate {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 9px;
+  background: #071827bb;
+  border: 1px solid #55c8bd70;
+  color: #b6e5df;
+  font: 8px Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.photo-label {
+  position: absolute;
+  bottom: 22px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: white;
+}
+
+.photo-label span {
+  font: 9px Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #65d5c9;
+}
+
+.photo-label strong {
+  font: 600 23px Georgia, serif;
+  letter-spacing: .5px;
+}
+
+.photo-label small {
+  font: 9px Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #c0d5dc;
+}
+
+/* Frame footer */
+
+.digital-frame-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 5px 5px;
+}
+
+.digital-frame-bottom > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.digital-bottom-label {
+  font: 8px Arial, sans-serif;
+  letter-spacing: 1.8px;
+  color: #6e9da7;
+}
+
+.digital-frame-bottom strong {
+  font: 8px Arial, sans-serif;
+  letter-spacing: 1px;
+  color: #b5d4d9;
+}
+
+.digital-signal {
+  display: flex;
+  align-items: end;
+  gap: 3px;
+  height: 19px;
+}
+
+.digital-signal i {
+  display: block;
+  width: 3px;
+  background: #35c9bd;
+}
+
+.digital-signal i:nth-child(1) { height: 7px; }
+.digital-signal i:nth-child(2) { height: 12px; }
+.digital-signal i:nth-child(3) { height: 17px; }
+.digital-signal i:nth-child(4) { height: 10px; }
+.digital-signal i:nth-child(5) { height: 14px; }
+
+/* Four technical frame corners */
+
+.digital-corner {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  border-color: #55d5c8;
+  border-style: solid;
+}
+
+.corner-tl {
+  top: -4px;
+  left: -4px;
+  border-width: 2px 0 0 2px;
+}
+
+.corner-tr {
+  top: -4px;
+  right: -4px;
+  border-width: 2px 2px 0 0;
+}
+
+.corner-bl {
+  bottom: -4px;
+  left: -4px;
+  border-width: 0 0 2px 2px;
+}
+
+.corner-br {
+  bottom: -4px;
+  right: -4px;
+  border-width: 0 2px 2px 0;
+}
+
+.digital-side-label {
+  position: absolute;
+  right: -4px;
+  bottom: 5px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font: 8px Arial, sans-serif;
+  letter-spacing: 2px;
+  color: #6ba8ae;
+}
+
+/* Remove old floating decorations */
+
+.hero-art .floating-note,
+.hero-art .art-stamp,
+.hero-art .photo-orbit,
+.hero-art .portrait-icon,
+.hero-art .photo-instruction,
+.hero-art .photo-caption,
+.hero-art .hero-index-card {
+  display: none !important;
+}
+
+/* Mobile adjustments */
+
+@media (max-width: 760px) {
+  .hero {
+    background: linear-gradient(
+      150deg,
+      #071827,
+      #0d2a3a
+    ) !important;
+  }
+
+  .digital-hero-art {
+    min-height: auto;
+    margin-top: 35px;
+    padding: 10px 8px 25px;
+  }
+
+  .digital-frame {
+    width: 100%;
+    max-width: 370px;
+  }
+
+  .digital-photo {
+    height: 390px;
+  }
+
+  .digital-side-label {
+    right: -2px;
+    bottom: 0;
+  }
+
+  .digital-frame-bottom strong {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 390px) {
+  .digital-photo {
+    height: 340px;
+  }
+
+  .photo-label strong {
+    font-size: 19px;
+  }
+
+  .digital-frame-bottom strong {
+    font-size: 6px;
+  }
+}
